@@ -1,0 +1,119 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  height: 100vh;
+}
+
+footer{
+  background-color: #000;
+  height: 150px;
+}
+
+h1{
+  text-align: center;
+}
+/************* Шапка сайта ************/
+
+
+.header{
+  display: flex;
+}
+
+.header_logo{
+  padding: 10px;
+}
+
+.header_nav{
+  display: flex;
+  padding-top: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+}
+
+.header_nav li{
+  list-style: none;
+  margin-left: 15px;
+}
+
+.header_nav a{
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+
+
+/****************  Блок услуги  ***************/
+
+.service{
+  height: 100vh;
+  background-color: #4286f4;
+}
+
+.service_box{
+  margin-left: 150px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+}
+
+
+
+/********************* Блок то мы ремонтируем ***************/
+
+.mobile{
+  height: 100vh;
+  background-color: #42f4df;
+}
+
+.mobile_box{
+  margin: 0 auto;
+  width: 1000px;
+  margin-top: 150px;
+  display: flex;
+}
+
+.box{
+  width: 300px;
+}
+
+.box img{
+  width: 200px;
+  height: 300px;
+}
+
+.box p{
+  padding-bottom: 30px;
+}
+
+/****************** Блок контактов ******************/
+
+
+.contact{
+  height: 100vh;
+}
+
+.contact_us{
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+/******************* Блок отзывы *****************/
+
+.comments{
+  color: #fff;
+  background-color: #645;
+}
+
+.comments_us{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.comm{
+  display: flex;
+}
