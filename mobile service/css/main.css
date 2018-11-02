@@ -26,6 +26,11 @@ h1{
   padding: 10px;
 }
 
+.header_logo span{
+  font-size: 38px;
+  color: #4286f4;
+}
+
 .header_nav ul{
   display: flex;
 }
@@ -66,7 +71,7 @@ h1{
 
 
 
-/********************* Блок то мы ремонтируем ***************/
+/********************* Блок что мы ремонтируем ***************/
 
 .mobile{
   height: 100vh;
@@ -112,6 +117,18 @@ h1{
   color: #fff;
   background-color: #645;
 }
+
+.prof{
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.prof i{
+  margin-left: 5px;
+  font-size: 24px;
+  color: #fff;
+}
+
 
 .comments_us{
   width: 1000px;
