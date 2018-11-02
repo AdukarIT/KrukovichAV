@@ -5,3 +5,14 @@ i{
 a{
   text-decoration: none;
 }
+
+table, td, tr {
+  text-align: center;
+  width: 50%;
+  border: 1px solid gray;
+  margin: 0 auto;
+}
+
+span{
+  display: flex;
+}
