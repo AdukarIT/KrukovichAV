@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 i{
   color: orange;
 }
@@ -15,4 +20,47 @@ table, td, tr {
 
 span{
   display: flex;
+}
+
+header{
+  background-color: grey;
+  height: 150px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.contact{
+  margin-top: 50px;
+  height: 200px;
+  background-color: grey;
+}
+
+.name{
+  margin: 10px;
+}
+
+.rang{
+  margin: 20px;
+}
+
+.foto{
+  margin: 20px;
+}
+
+.foto_gal ul{
+  display: flex;
+}
+
+.foto_gal li{
+  list-style: none;
+  margin-left: 20px;
+}
+
+.foto_gal img{
+  width: 200px;
+  height: 150px;
+}
+
+.tab{
+  margin: 10px;
 }
