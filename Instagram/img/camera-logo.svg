@@ -1,0 +1,12 @@
+<?xml version="1.0"?><svg width="640" height="480" xmlns="http://www.w3.org/2000/svg">
+ <metadata id="metadata3045">image/svg+xml</metadata>
+ <g>
+  <path d="m465,238.499969c0,107.419373 -87.080597,194.500031 -194.500031,194.500031c-107.419373,0 -194.499939,-87.080658 -194.499939,-194.500031c0,-107.419373 87.080566,-194.499969 194.499939,-194.499969c107.419434,0 194.500031,87.080597 194.500031,194.499969z" id="path3869" fill="#003f7f"/>
+  <path d="m142.83371,183.083252l32.416672,0l32.416672,0l32.416656,-41.493332l32.416656,0l32.416687,0l32.416656,41.493332l32.416656,0l32.416656,0l0,129.666656l-259.333313,0l0,-129.666656z" id="rect3071" fill="#ffffff"/>
+  <path id="path3851" d="m351.137543,232.5858c0,43.430313 -35.207275,78.637558 -78.637604,78.637558c-43.430359,0 -78.637634,-35.207245 -78.637634,-78.637558c0,-43.430313 35.207275,-78.637573 78.637634,-78.637573c43.430328,0 78.637604,35.20726 78.637604,78.637573z" stroke-dashoffset="0" stroke-miterlimit="4" stroke-linecap="square" stroke-width="0" stroke="#6f916f" fill="#003f7f"/>
+  <path id="path3853" d="m341.732452,232.585724c0,38.236115 -30.996399,69.232422 -69.232422,69.232422c-38.236008,0 -69.232346,-30.996307 -69.232346,-69.232422c0,-38.235947 30.996338,-69.232361 69.232346,-69.232361c38.236023,0 69.232422,30.996414 69.232422,69.232361z" fill="#ffffff" stroke-width="18"/>
+  <title>Layer 1</title>
+  <text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" id="svg_1" y="79" x="458" opacity="0.5" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#000000"/>
+  <text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" id="svg_2" y="71" x="457" opacity="0.5" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#000000"/>
+ </g>
+</svg>
