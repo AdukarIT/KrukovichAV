@@ -20,6 +20,7 @@ https://jsfiddle.net/tz5mvgnx/
 
 
 Задания по теме "Основы HTML"
+
 Задание 1. Сервис ремонта мобильных телефонов
 
 https://github.com/AdukarIT/KrukovichAV/tree/master/mobile%20service
