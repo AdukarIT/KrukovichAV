@@ -49,3 +49,17 @@ iframe{
   width: 280px;
   background-color: #e6e6e6;
 }
+
+.add_post{
+  line-height: 50px;
+  border-top: 3px solid #d74c4f;
+  border-bottom: 3px solid #d74c4f;
+  border-radius: 10px;
+  margin-left: 450px;
+  position: fixed;
+}
+
+.add_post:hover{
+  border-bottom: 3px solid #5e3afb;
+  border-top: 3px solid #5e3afb;
+}
