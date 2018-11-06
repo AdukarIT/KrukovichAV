@@ -28,7 +28,7 @@ https://github.com/AdukarIT/KrukovichAV/tree/master/mobile%20service
 
 https://github.com/AdukarIT/KrukovichAV/tree/master/hardware%20store
 
-Задания по теме "Продвинутый HTML"
+# Задания по теме "Продвинутый HTML"
 
 Задание 1. Соцсеть фотографий и видео (Instagram)
 
