@@ -18,8 +18,7 @@ Location: http://www.google.com/
 
 https://jsfiddle.net/tz5mvgnx/
 
-
-#Задания по теме "Основы HTML"
+# Задания по теме "Основы HTML"
 
 Задание 1. Сервис ремонта мобильных телефонов
 
