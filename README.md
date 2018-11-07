@@ -18,8 +18,7 @@ Location: http://www.google.com/
 
 https://jsfiddle.net/tz5mvgnx/
 
-
-Задания по теме "Основы HTML"
+# Задания по теме "Основы HTML"
 
 Задание 1. Сервис ремонта мобильных телефонов
 
@@ -28,3 +27,13 @@ https://github.com/AdukarIT/KrukovichAV/tree/master/mobile%20service
 Задание 2. Магазин оргтехники
 
 https://github.com/AdukarIT/KrukovichAV/tree/master/hardware%20store
+
+# Задания по теме "Продвинутый HTML"
+
+Задание 1. Соцсеть фотографий и видео (Instagram)
+
+https://github.com/AdukarIT/KrukovichAV/tree/master/Instagram
+
+Задание 2. Сайт руководств по изучению иностранных языков
+
+https://github.com/AdukarIT/KrukovichAV/tree/master/Language%20Tutorials%20website
