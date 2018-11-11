@@ -40,8 +40,8 @@ https://github.com/AdukarIT/KrukovichAV/tree/master/Language%20Tutorials%20websi
 
 # CSS. Позиционирование Д.З.
 
-https://webref.ru/node/1865/quiz-results/2575/view задание 1
+https://webref.ru/node/1865/quiz-results/2700/view задание 1
 
-https://webref.ru/node/1459/quiz-results/2579/view задание 2
+https://webref.ru/node/1459/quiz-results/2727/view задание 2
 
-https://webref.ru/node/1921/quiz-results/2581/view задание 3
+https://webref.ru/node/1921/quiz-results/2728/view задание 3
