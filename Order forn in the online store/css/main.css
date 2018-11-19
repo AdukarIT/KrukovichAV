@@ -1,0 +1,252 @@
+/*********** Общие настройки **********/
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/yellow-wall.jpg");
+  font-family: 'Cuprum', sans-serif;
+}
+
+header {
+  display: flex;
+  background-color: #b8443e;
+  height: 100px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  right: 0;
+  margin-top: 20px;
+  margin-left: 350px;
+  height: 340px;
+  width: 920px;
+  overflow: hidden;
+}
+
+section {
+  height: 400px;
+}
+
+footer {
+  height: 100%;
+}
+
+.form-cart__item input[type="checkbox"] {
+  display: none;
+}
+
+label:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/************* Задаем полю позицию,
+что бы оставить место под поле адрес ******/
+textarea {
+  position: absolute;
+  top: 350px;
+  left: 50px;
+  resize: none;
+}
+
+fieldset {
+  height: 525px;
+  margin: 5px;
+}
+
+/**************** Логотип и название *******/
+.logo {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.shopname {
+  padding-top: 25px;
+  padding-left: 20px;
+  font-size: 40px;
+}
+
+/*********** Стили меню **********/
+.menu {
+  font-family: 'Cuprum', sans-serif;
+  display: flex;
+  text-transform: uppercase;
+  line-height: 40px;
+  font-size: 14px;
+  /*color: #c4c6be;*/
+  color: #fff;
+}
+
+.menu_item {
+  margin-top: 5px;
+  margin-left: 10px;
+  position: relative;
+  height: 40px;
+  width: 200px;
+  text-align: center;
+  background-color: #654634;
+  border-radius: 15px;
+  border-bottom: 5px solid #3d322c;
+}
+
+/*********** Смещаем активное меню и задаем время **********/
+.menu_active {
+  transition: 1s;
+  transform: translateY(500px);
+}
+
+.active:hover {
+  padding-bottom: 20px;
+  background-color: #3d322c;
+  transition: 1s;
+  cursor: pointer;
+}
+
+/*********** Класс для уменьшения кнопки корзины **********/
+.cart {
+  width: 110px;
+}
+
+/*********** Показываем активное меню задаем стили **********/
+.menu_item:hover .menu_active {
+  display: inline-block;
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  z-index: 999999;
+  background-color: #9a573d;
+  width: 200px;
+  transition: 1s;
+  transform: translateY(0);
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+/*********** Задаем стили активного меню **********/
+.menu_active_item {
+  border-bottom: 1px solid #fff;
+}
+
+.menu_active_item:last-child {
+  border-bottom: 0px;
+}
+
+.menu_active_item:hover {
+  background-color: #dcb06f;
+}
+
+.menu_active_item:hover:first-child {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #dcb06f;
+}
+
+.menu_active_item:hover:last-child {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #dcb06f;
+}
+
+/*********** Стили формы заказ **********/
+.dws-form {
+  position: absolute;
+  top: 120px;
+  left: 10px;
+}
+
+.form-cart {
+  position: relative;
+  width: 330px;
+  height: 550px;
+  background-color: #9a573d;
+  border-radius: 5px;
+  box-shadow: 0px 5px 30px 5px;
+}
+
+.form-cart__item {
+  color: #fff;
+  margin: 10px;
+  text-align: center;
+}
+
+.form-cart__item input {
+  width: 200px;
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.form-cart-name {
+  box-shadow: 0px 0px 13px 0px;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 18px;
+  width: 100%;
+  height: 50px;
+  background-color: #dcb06f;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.map {
+  display: none;
+}
+
+/*********** Показываем карты и задаем ей позицию ******/
+.form-cart__item input:checked+.map {
+  display: block;
+  position: absolute;
+  top: 125px;
+  left: 380px;
+}
+
+.adres {
+  display: none;
+}
+
+/********* Показываем поле ввода адрес ******/
+.form-cart__item input:checked+.adres {
+  margin-top: 20px;
+  display: block;
+}
+
+.form-cart-agree {
+  color: #fff;
+  position: absolute;
+  bottom: 35px;
+}
+
+/****** таким образом прячем кнопку закача *****/
+.sub {
+  padding: 10px;
+  margin-left: 100px;
+  visibility: hidden;
+}
+
+/***** показываем поле заказа *****/
+.form-cart-agree input:checked+.sub {
+  visibility: visible;
+}
+
+.form-cart-agree span {
+  display: inline;
+  margin-left: 20px;
+  text-align: center;
+}
+
+/********* блок контакты ******/
+.footer-contact {
+  display: inline-block;
+  width: 100%;
+  background-color: #b8443e;
+  text-align: right;
+}
+
+.footer-contact__item {
+  padding: 5px 15px 10px 0px;
+}
+
+.footer-contact__item a {
+  color: #000;
+  text-decoration: none;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+  <title>Menu</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/logo.png" alt="logo">
+    </div>
+    <div class="shopname">
+      Закупайка
+    </div>
+  </header>
+  <nav>
+    <div class="menu">
+      <div class="menu_item active">
+        <i class="fas fa-calculator"></i>
+        Бытовая техника
+        <i class="fas fa-angle-down"></i>
+        <div class="menu_active">
+          <div class="menu_active_item">
+            Стиральные машины
+          </div>
+          <div class="menu_active_item">
+            Пылесосы
+          </div>
+          <div class="menu_active_item">
+            Швейные, вышивные машины
+          </div>
+          <div class="menu_active_item">
+            Утиги
+          </div>
+          <div class="menu_active_item">
+            Электровеники
+          </div>
+          <div class="menu_active_item">
+            Сушилки для обуви
+          </div>
+        </div>
+      </div>
+      <div class="menu_item active">
+        <i class="fas fa-calendar-minus"></i>
+        Техника для кухни
+        <i class="fas fa-angle-down"></i>
+        <div class="menu_active">
+          <div class="menu_active_item">
+            Холодильники
+          </div>
+          <div class="menu_active_item">
+            Кухонные плиты
+          </div>
+          <div class="menu_active_item">
+            Морозильники
+          </div>
+          <div class="menu_active_item">
+            Настольные плиты
+          </div>
+          <div class="menu_active_item">
+            Ростеры, мини-печи
+          </div>
+          <div class="menu_active_item">
+            Вытяжки
+          </div>
+          <div class="menu_active_item">
+            Микроволновые печи
+          </div>
+        </div>
+      </div>
+      <div class="menu_item active">
+        <i class="fas fa-laptop"></i>
+        Компьютерная техника
+        <i class="fas fa-angle-down"></i>
+        <div class="menu_active">
+          <div class="menu_active_item">
+            Ноутбуки
+          </div>
+          <div class="menu_active_item">
+            Планшеты
+          </div>
+          <div class="menu_active_item">
+            Компьютеры, моноблоки
+          </div>
+          <div class="menu_active_item">
+            Игровые пристави
+          </div>
+          <div class="menu_active_item">
+            Серверное оборудование
+          </div>
+        </div>
+      </div>
+      <div class="menu_item cart">
+        <i class="fas fa-cart-arrow-down"></i>
+        Корзина
+      </div>
+    </div>
+  </nav>
+  <section>
+    <div class="dws-form">
+      <form class="form-cart" action="index.html" method="post">
+        <fieldset>
+          <legend class="form-cart-name">Форма заказа товара</legend>
+          <div class="form-cart__item"><i class="fas fa-user"></i>
+            <input type="text" name="firstname" placeholder="Ваше имя" required>
+          </div>
+          <div class="form-cart__item"><i class="fas fa-user"></i>
+            <input type="text" name="lastname" placeholder="Ваша фамилия" required>
+          </div>
+          <div class="form-cart__item"><i class="fas fa-phone-square"></i>
+            <input type="tel" name="tel" placeholder="Ваш номер телефона" required>
+          </div>
+          <div class="form-cart__item"><i class="fas fa-envelope-square"></i>
+            <input type="email" name="email" placeholder="Ваш email" required>
+          </div>
+          <div class="form-cart__item">
+            <label>
+              Самовывоз товара Немига 5
+              <input type="checkbox">
+              <div class="map" id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.6831524350805!2d27.547051915859488!3d53.90183538009915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfebe68e0203%3A0x7b59184b5d72f463!2z0YPQu9C40YbQsCDQndC10LzQuNCz0LAgNSwg0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1542464364767"
+                  width="600px" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+            </label>
+          </div>
+          <div class="form-cart__item">
+            <label>
+              Курьером по Минску
+              <input type="checkbox">
+              <div class="adres"><i class="fas fa-map-marker-alt"></i>
+                <input type="text" name="adres" placeholder="Адрес доставки" required>
+              </div>
+            </label>
+          </div>
+          <div class="form-cart__item">
+            <textarea name="comment" rows="4 " cols="30" placeholder="Комментарий к заказу"></textarea>
+          </div>
+          <div class="form-cart-agree">
+            <input type="checkbox">
+            Я прочитал и согласен с условиями доставки
+            <div class="sub">
+              <input type="submit" value="Заказать">
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-contact">
+      <div class="footer-contact__item">
+        ПН-ПТ: 8:00 - 19:00
+        СБ: 9:00 - 18:00
+        ВС: Выходной
+      </div>
+      <div class="footer-contact__item">
+        ул. Улица д5 офис 312
+      </div>
+      <div class="footer-contact__item">
+        <a href="tel:+375292589913">+37529-233-33-33</a>
+        <a href="tel:+375292589913">+37529-233-22-22</a>
+        <a href="tel:+375292589913">+37529-258-11-11</a>
+        <a href="skype:"><i class="fab fa-skype"></i>Skype</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
