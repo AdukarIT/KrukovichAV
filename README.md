@@ -45,3 +45,9 @@ https://webref.ru/node/1865/quiz-results/2700/view задание 1
 https://webref.ru/node/1459/quiz-results/2727/view задание 2
 
 https://webref.ru/node/1921/quiz-results/2728/view задание 3
+
+# Задания по теме "Основы CSS. Позиционирование" (Практика 4)
+
+Задание 1. Форма заказа в интернет-магазине
+
+https://github.com/AdukarIT/KrukovichAV/tree/master/Order%20forn%20in%20the%20online%20store
