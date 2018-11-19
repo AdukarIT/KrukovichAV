@@ -37,3 +37,11 @@ https://github.com/AdukarIT/KrukovichAV/tree/master/Instagram
 Задание 2. Сайт руководств по изучению иностранных языков
 
 https://github.com/AdukarIT/KrukovichAV/tree/master/Language%20Tutorials%20website
+
+# CSS. Позиционирование Д.З.
+
+https://webref.ru/node/1865/quiz-results/2700/view задание 1
+
+https://webref.ru/node/1459/quiz-results/2727/view задание 2
+
+https://webref.ru/node/1921/quiz-results/2728/view задание 3
