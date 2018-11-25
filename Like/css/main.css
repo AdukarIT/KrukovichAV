@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/dark.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+}
+
+i {
+  color: grey;
+  font-size: 25px;
+}
+
+.like input[type="checkbox"] {
+  display: none;
+}
+
+.like {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 10px 0px;
+  border: 1px solid;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+.like a {
+  font-size: 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+}
+
+.like:hover {
+  cursor: pointer;
+  box-shadow: inset 0px 0px 5px 0px;
+}
+
+.like:hover i {
+  cursor: pointer;
+  color: blue;
+}
+
+.like:hover span {
+  cursor: pointer;
+}
+
+.like input:checked+.icon-heart {
+  color: red;
+}
+
+.like input:checked+.icon-heart:hover {
+  color: red;
+  opacity: 0.3;
+}

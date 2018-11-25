@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.header i {
+  font-size: 1.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1rem;
+  background-image: url("../img/header1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.header_logo {
+  padding-bottom: 1rem;
+}
+
+.header_nav {
+  position: relative;
+  display: flex;
+}
+
+.header_nav_item {
+  border: 0px dashed;
+  height: 2rem;
+  padding: 1rem 1rem 0.1rem;
+  margin-left: 3rem;
+  text-transform: uppercase;
+  transition: 1s;
+}
+
+.header_nav_item:hover {
+  border: 2px solid #923629;
+  border-radius: 1rem;
+  padding: 1rem 1rem 0.1rem;
+  cursor: pointer;
+  transition: 1s;
+  background-color: #cfa972;
+  color: #302158;
+  font-weight: bold;
+}
+
+.header_search {
+  border: 0px dashed;
+  height: 2rem;
+  padding: 1rem;
+  transition: 1s;
+}
+
+.header_search:hover {
+  border: 2px solid #923629;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 1s;
+  height: 2rem;
+  padding: 1rem;
+  box-shadow: 0px 0px 1px 0px;
+  background-color: #cfa972;
+}
+
+.header_search input {
+  outline: none;
+  height: 2rem;
+  border-radius: 0.5rem;
+}
+
+.header_phone a {
+  color: #000;
+  text-decoration: none;
+}
