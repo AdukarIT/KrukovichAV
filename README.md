@@ -69,3 +69,13 @@ https://github.com/AdukarIT/KrukovichAV/tree/master/custom%20checkbox
 Задание 4. Header магазина
 
 https://github.com/AdukarIT/KrukovichAV/tree/master/header
+
+# Задания по теме "CSS FLEX BOX"
+
+Задание 1. Header для сайта Adukar
+
+https://github.com/AdukarIT/KrukovichAV/tree/master/adukar%20header
+
+Задание 2. Сверстать макет для страницы новостей Вконтакте
+
+https://github.com/AdukarIT/KrukovichAV/tree/master/vk%20page
