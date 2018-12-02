@@ -1,0 +1,246 @@
+/********** Ощие настройки ******/
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+}
+
+.header {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/land-ct.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+/********** Создаем псевдо класс, для затемнения ******/
+.header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(00, 00, 00, 0.4);
+  z-index: 0;
+}
+
+/********** Общее расположение блоков ******/
+.header-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-top__logo {
+  margin-top: 2.5rem;
+  margin-left: 2.5rem;
+  display: flex;
+  z-index: 1;
+}
+
+.header-top__logo img {
+  width: 10rem;
+  height: 2rem;
+}
+
+.top-header__nav {
+  margin-top: 3rem;
+  display: flex;
+  z-index: 1;
+}
+
+.nav__item {
+  position: relative;
+  text-transform: uppercase;
+  color: #fff;
+  margin-left: 2rem;
+  font-weight: 700;
+}
+
+.nav__item:hover {
+  cursor: pointer;
+}
+
+.nav__item a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/********** Псевдо класс для анимации ******/
+.nav__item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 90px;
+  height: 2px;
+  transform: scale(0);
+  transition: 0.5s;
+  background-color: #fff;
+}
+
+/********** Анимация при наведении на меню ******/
+.nav__item_active:hover + .nav__item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 90px;
+  height: 2px;
+  transform: scale(1);
+  transition: 0.5s;
+  background-color: #fff;
+}
+
+.header-top__contact {
+  display: flex;
+  margin-top: 2rem;
+  margin-right: 1.5rem;
+  z-index: 1;
+}
+
+.contact__phone {
+  margin-right: 1.5rem;
+}
+
+.contact__phone a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.contact__social {
+  display: flex;
+}
+
+/********** Родительский блок для иконок ******/
+.social__item {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.7rem;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+/********** Центруем каждую иконку в блоке ******/
+.icon-vk {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-60%, -50%);
+  font-size: 1.2rem;
+}
+
+.icon-instagram {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.4rem;
+}
+
+.icon-telegram {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.4rem;
+}
+
+/******* Центральный блок ********/
+.study {
+  display: flex;
+  justify-content: center;
+}
+
+.study__title {
+  margin-top: 3rem;
+  display: inline-block;
+  text-align: center;
+  z-index: 1;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.study__title em {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.skils {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.skils__item {
+  display: inline-flex;
+  width: 300px;
+  height: 100px;
+}
+
+.skils__item img {
+  width: 25%;
+  z-index: 1;
+}
+
+.skils__item p {
+  text-transform: uppercase;
+  line-height: 2rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #fff;
+  z-index: 1;
+}
+
+.header__content {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.header__content p {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  z-index: 1;
+}
+
+.header__button {
+  position: absolute;
+  left: 50%;
+  bottom: 15%;
+  transform: translate(-50%);
+  z-index: 1;
+  background-color: #e55;
+  border: 1px solid #e55;
+  border-radius: 0.3rem;
+  height: 2.5rem;
+  width: 17rem;
+}
+
+.header__button a {
+  text-align: center;
+  padding-left: 0.5rem;
+  line-height: 2.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  transition: 0.5s;
+  font-weight: 500;
+}
+
+.header__button:hover {
+  border: 1px solid #e55;
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+.header__button a:hover {
+  color: #e55;
+  transition: 0.5s;
+}

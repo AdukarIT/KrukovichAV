@@ -1,0 +1,429 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #edeef0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12.5px;
+}
+
+header{
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  height: 42px;
+  background-color: #4a76a8;
+}
+
+/********** Стили для header *********/
+
+.header__wrapper{
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.header__logo{
+  margin: 11px 10px 0 0;
+}
+
+.header__search{
+  margin-left: 120px;
+  margin-top: 7px;
+}
+
+.header__search input{
+  font-family: 'Roboto', sans-serif;
+  width: 230px;
+  height: 28px;
+  background: #224b7a url("https://vk.com/images/svg_icons/ic_head_loupe.svg");
+  background-repeat: no-repeat;
+  background-position: 10px;
+  border: transparent;
+  padding-left: 27px;
+  border-radius: 14px;
+  color: #d9e2ec;
+}
+
+.header__search input:focus{
+  background-color: #fff;
+  outline: none;
+}
+
+.header__nav{
+  display: flex;
+  padding-left: 20px;
+}
+
+.nav__item{
+  padding-top: 10px;
+  padding-left: 15px;
+  width: 35px;
+}
+
+.nav__item:hover{
+  width: 35px;
+  height: 32px;
+  cursor: pointer;
+  background-color: #3d6898;
+}
+
+.nav__play{
+  position: relative;
+  margin-top: 8px;
+  border-radius: 4px;
+  width: 25px;
+  height: 25px;
+  background-color: #224b7a;
+}
+
+.nav__play:hover{
+  cursor: pointer;
+}
+
+.nav__play::before{
+  content: "";
+  position: absolute;
+  left: -3px;
+  top: 7px;
+  width: 10px;
+  height: 10px;
+  background-color: #224b7a;
+  transform: rotate(45deg);
+}
+
+.nav__play i{
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%,-50%);
+  color: rgb(207, 207, 207);
+}
+
+.header__profile{
+   display: flex;
+   justify-content: flex-end;
+}
+
+.header__profile:hover{
+  background-color: #3d6898;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.profile__name{
+  color: #fff;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.profile__image img{
+  margin-top: 5px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.profile__arrow{
+  color: rgb(207, 207, 207);
+  margin-top: 10px;
+}
+
+/************** клас для центровки контента*****/
+.content__wrapper{
+  width: 960px;
+  margin: 0 auto;
+}
+
+.content{
+  margin-top: 15px;
+  display: flex;
+}
+
+.content_photo{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content_photo img{
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: 30%;
+  height: 20%;
+}
+
+/******* описываем левую часть*****/
+.content__left{
+  position: relative;
+  width: 149px;
+  height: 100%;
+}
+
+.content__left ul{
+  padding-left: 0px;
+}
+.content__left li{
+  font-size: 12.5px;
+  list-style: none;
+  color: #285473;
+}
+
+.content__left li:hover{
+  background-color: rgba(0, 33, 255, 0.09);
+  cursor: pointer;
+
+}
+
+.content__left i{
+  font-size: 17px;
+  line-height: 30px;
+  margin-right: 10px;
+  opacity: 0.55;
+  color: #224b7a;
+}
+
+.numb_row{
+  position: relative;
+  display: flex;
+  line-height: 35px;
+}
+
+.numb_row span{
+  position: absolute;
+  right: 2px;
+}
+
+/****** описываем центральную часть******/
+
+.mid__list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__mid{
+  width: 550px;
+  height: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.content__header{
+  display: flex;
+}
+
+.header__name{
+  margin-top: 20px;
+  margin-left: 20px;
+  line-height: 15px;
+  color: #224b7a;
+}
+
+.header__name span{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.content__logo{
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.content__logo img{
+  border-radius: 50%;
+}
+
+.content__title{
+  margin: 5px;
+}
+
+.content__text{
+  margin: 5px;
+}
+
+.content__stats-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__stats{
+  display: flex;
+}
+
+.stats__comment{
+  display: flex;
+}
+
+.stats__post{
+  display: flex;
+}
+
+.content__stats i{
+  line-height: 45px;
+  margin-left: 20px;
+  font-size: 20px;
+  color: grey;
+}
+
+.content__stats p{
+  margin-left: 10px;
+  font-size: 15px;
+  color: grey;
+}
+
+.stats__like{
+  display: flex;
+}
+
+.content__views{
+  display: flex;
+  margin-right: 40px;
+}
+.content__views i{
+  font-size: 20px;
+  line-height: 45px;
+  color: grey;
+}
+
+.content__views p{
+  margin-left: 10px;
+  font-size: 15px;
+  color: grey;
+}
+
+.content__video{
+  display: flex;
+}
+
+.video__left img{
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 400px;
+  width: 250px;
+}
+
+.video__right img{
+  margin-bottom: 10px;
+  width: 250px;
+  height: 190px;
+
+}
+
+
+/***** модификатор для первых двух столбцов******/
+.content_column{
+  display: flex;
+  flex-direction: column;
+}
+
+/******** правая часть фиксированная **************/
+
+.content__right{
+  position: fixed;
+  width: 230px;
+  height: 340px;
+  background-color: #fff;
+}
+
+.content__right ul{
+  padding-left: 0px;
+}
+
+.content__right li{
+  padding-left: 10px;
+  list-style: none;
+  height: 31px;
+  font-size: 12.5px;
+  line-height: 30px;
+  color: #285473;
+}
+
+/********* модификатор для выбранного поля*********/
+.content__right_checked{
+  border-left: 2px solid #4a76a8;
+  background-color: rgba(0, 33, 255, 0.09);
+  font-weight: bold;
+}
+
+.content__right_padding li{
+  padding-left: 30px;
+  color: grey;
+}
+
+.content__right_flex{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+
+/************ класс для вставки нежней границы в список ****************/
+.border{
+  margin-top: 15px;
+  margin-right: 10px;
+  border-top: 1px solid rgb(207, 207, 207);
+}
+
+.content__right_active li:hover{
+  background-color: rgba(0, 33, 255, 0.09);
+  cursor: pointer;
+}
+
+.filter{
+  color: #224b7a;
+  opacity: 0.55;
+}
+
+.interest{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  height: 40px;
+  background-color: #fff;
+}
+
+.interest__title{
+  padding-top: 5px;
+}
+
+.interest__title i{
+  font-size: 20px;
+  color: #d64c10;
+}
+
+.interest__check{
+  padding-top: 7px;
+}
+
+/*********** нижний блок с чатом ******************/
+
+.chat{
+  position: fixed;
+  height: 90px;
+  width: 50px;
+  bottom: 0;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(0, 33, 255, 0.09);
+}
+
+.chat__image img{
+  padding-left: 5px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.chat__profile{
+  padding-left: 7px;
+  color: #224b7a;
+  opacity: 0.55;
+}
