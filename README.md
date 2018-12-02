@@ -51,3 +51,21 @@ https://webref.ru/node/1921/quiz-results/2728/view задание 3
 Задание 1. Форма заказа в интернет-магазине
 
 https://github.com/AdukarIT/KrukovichAV/tree/master/Order%20forn%20in%20the%20online%20store
+
+# Задания по теме "CSS. Стилистическое оформление элементов" (Практика 5)
+
+Задание 1. Пляж
+
+https://github.com/AdukarIT/KrukovichAV/tree/master/beach
+
+Задание 2. Лайк
+
+https://github.com/AdukarIT/KrukovichAV/tree/master/Like
+
+Задание 3. Чекбокс
+
+https://github.com/AdukarIT/KrukovichAV/tree/master/custom%20checkbox
+
+Задание 4. Header магазина
+
+https://github.com/AdukarIT/KrukovichAV/tree/master/header
