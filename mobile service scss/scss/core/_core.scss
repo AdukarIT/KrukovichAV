@@ -1,0 +1,15 @@
+$header_font: sans-serif;
+$header_color: red;
+$footer_color: rgb(124, 82, 53);
+
+
+@mixin title($font-size) {
+  font-size: $font-size;
+  font-family: sans-serif;
+  color: rgb(167, 109, 26);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 20px;
+  text-shadow: 0 1px #000;
+}

@@ -1,0 +1,29 @@
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: $header_color;
+  font-family: $header_font;
+  display: flex;
+  justify-content: space-around;
+  .header__nav_row {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .nav__list{
+    list-style: none;
+    margin-left: 10px;
+    text-transform: uppercase;
+
+    a{
+      background-color: #fff;
+      padding: 5px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    a:hover{
+      background-color: #677777;
+      color: red;
+    }
+  }
+}

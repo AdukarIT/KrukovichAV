@@ -1,0 +1,11 @@
+.service{
+  padding-top: 50px;
+  background-color: #456788;
+  h1{
+    @include title(20px);
+  }
+  .service-content{
+    display: flex;
+    justify-content: space-around;
+  }
+}
