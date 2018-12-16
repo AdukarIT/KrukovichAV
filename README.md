@@ -79,3 +79,17 @@ https://github.com/AdukarIT/KrukovichAV/tree/master/adukar%20header
 Задание 2. Сверстать макет для страницы новостей Вконтакте
 
 https://github.com/AdukarIT/KrukovichAV/tree/master/vk%20page
+
+# CSS. Анимации
+
+Задание 1. Прыгающий мяч
+
+https://github.com/AdukarIT/KrukovichAV/tree/master/Football%20move
+
+Задание 2. Вентилятор
+
+https://github.com/AdukarIT/KrukovichAV/tree/master/Fan%20rotation
+
+Задание 3. Спрайты
+
+https://github.com/AdukarIT/KrukovichAV/tree/master/Subzero%20fight
