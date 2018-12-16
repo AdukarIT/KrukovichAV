@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.phone {
+  position: relative;
+  z-index: 1;
+  width: 150px;
+  height: 300px;
+  background-image: url("../img/iphone_x.png");
+  background-size: contain;
+}
+
+.subzero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 66px;
+  height: 135px;
+  background-image: url("../img/sheet.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.subzero:hover {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-timing-function: step-start;
+          animation-timing-function: step-start;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes move {
+  0% {
+    background-position: 0px;
+  }
+
+  20% {
+    background-position: -66px;
+  }
+
+  40% {
+    background-position: -132px;
+  }
+
+  50% {
+    background-position: -198px;
+  }
+
+  60% {
+    background-position: -264px;
+  }
+
+  80% {
+    background-position: -330px;
+  }
+
+  100% {
+    background-position: -396px;
+  }
+}
+
+@keyframes move {
+  0% {
+    background-position: 0px;
+  }
+
+  20% {
+    background-position: -66px;
+  }
+
+  40% {
+    background-position: -132px;
+  }
+
+  50% {
+    background-position: -198px;
+  }
+
+  60% {
+    background-position: -264px;
+  }
+
+  80% {
+    background-position: -330px;
+  }
+
+  100% {
+    background-position: -396px;
+  }
+}

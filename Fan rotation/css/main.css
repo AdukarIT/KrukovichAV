@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/fan.jpg");
+  background-repeat: no-repeat;
+}
+
+.fan{
+  margin-top: 135px;
+  margin-left: 160px;
+  height: 320px;
+  width: 320px;
+  background-image: url("../img/speen.png");
+  background-size: contain;
+  background-position: top;
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.fan:hover {
+  cursor: pointer;
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transform: rotate(1000deg);
+          transform: rotate(1000deg);
+
+{
+}}
