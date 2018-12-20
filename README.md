@@ -93,3 +93,7 @@ https://github.com/AdukarIT/KrukovichAV/tree/master/Fan%20rotation
 Задание 3. Спрайты
 
 https://github.com/AdukarIT/KrukovichAV/tree/master/Subzero%20fight
+
+# Задания по теме SCSS
+
+https://github.com/AdukarIT/KrukovichAV/tree/master/Desing%20Club%20scss
