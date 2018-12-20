@@ -1,0 +1,81 @@
+.content-mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $main_color;
+  padding: 0 2em;
+
+  .mid-button {
+    margin-top: 2em;
+    padding-top: 5px;
+    width: 14em;
+    height: 42px;
+    background: $main_color;
+    border-radius: 0.3em;
+    border: 0;
+    color: #eff0f1;
+    font-weight: 400;
+    font-size: 1.5em;
+    text-decoration: none;
+    line-height: 1.4em;
+    transition: 2s;
+
+    &:hover {
+      background-color: $hover_color;
+      transition: 2s;
+    }
+  }
+
+  .logo img {
+    width: 21.5em;
+    margin-top: 3em;
+    animation-duration: 4s;
+    animation-delay: 1s;
+  }
+
+  .mid-title {
+    font-family: 'Carrois Gothic SC', sans-serif;
+    font-size: 5em;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    margin-left: 0.3em;
+    font-weight: bold;
+    animation-duration: 4s;
+    width: 5em;
+
+    span {
+      font-size: 0.7em;
+      text-transform: uppercase;
+      letter-spacing: 1.3em;
+      margin-left: 0.35em;
+    }
+  }
+
+  p {
+    font-size: 1em;
+    margin: 2em 0 0;
+    width: 22em;
+  }
+
+  .mid-social {
+    font-size: 5.3em;
+    text-transform: uppercase;
+    letter-spacing: -3.5px;
+    margin-top: 0.8em;
+  }
+
+  .social__item {
+    color: $main_color;
+    font-size: 0.6em;
+    text-decoration: none;
+    transition: 1s;
+
+    &:hover {
+      color: $hover_color;
+      font-size: 1em;
+      transition: 1s;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to bottom left, #e8e8eb, #f5f6f6);
+  width: 93%;
+  margin: 2% 3%;
+  border: 1px solid #e8e8eb;
+  box-shadow: -7px 7px 25px 0px rgba(0, 0, 0, 0.37);
+  border-radius: 2em;
+}
+
+html, body, div, h1, h2, h3, p, pre,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, footer, header, hgroup, nav, section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: red;
+}
+
+/*# sourceMappingURL=css.main.map */

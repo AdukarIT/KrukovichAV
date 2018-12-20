@@ -1,0 +1,38 @@
+.content-right {
+  margin: 1.8em 2em 1.8em 0;
+
+  .right-element {
+    background-image: url("../img/BG_elem_right.png");
+    background-repeat: no-repeat;
+    width: 284px;
+    height: 250px;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    i {
+      position: absolute;
+      top: 1em;
+      left: 3.42em;
+      font-size: 2em;
+    }
+
+    h3 {
+      margin: 0.8em 0 0.8em -.8em;
+      font-weight: 400;
+      font-size: 1.3em;
+      color: #383838;
+    }
+
+    p {
+      margin: 0 0 0 -1.5em;
+      width: 17em;
+      margin-left: 2em;
+      font-size: 0.9em;
+      text-align: center;
+    }
+  }
+}

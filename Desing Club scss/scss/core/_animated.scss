@@ -1,0 +1,47 @@
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.left-element_move {
+  animation-name: leftmove;
+}
+@keyframes leftmove {
+  from {
+    opacity: 0;
+    transform: translate(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.right-element_move {
+  animation-name: rightmove;
+}
+@keyframes rightmove {
+  from {
+    opacity: 0;
+    transform: translate(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
