@@ -97,3 +97,11 @@ https://github.com/AdukarIT/KrukovichAV/tree/master/Subzero%20fight
 # Задания по теме SCSS
 
 https://github.com/AdukarIT/KrukovichAV/tree/master/Desing%20Club%20scss
+
+# Итоговая работа по вёрстке
+
+https://krukovich.github.io/shield_theme/public/index.html
+
+https://krukovich.github.io/shield_theme/public/blog.html
+
+https://krukovich.github.io/shield_theme/public/contact.html
