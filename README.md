@@ -105,3 +105,7 @@ https://krukovich.github.io/shield_theme/public/index.html
 https://krukovich.github.io/shield_theme/public/blog.html
 
 https://krukovich.github.io/shield_theme/public/contact.html
+
+# Операторы. Циклы.
+
+https://github.com/AdukarIT/KrukovichAV/tree/master/cycles
