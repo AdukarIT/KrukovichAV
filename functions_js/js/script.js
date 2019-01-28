@@ -5,7 +5,7 @@ function minNumber(a,b,c){
     document.write(a);
   } else if (b < a && b < c){
     document.write(b);
-  } else if (c < a && c < b){
+  } else if (c < a && c < b){ // проверка избыточна
     document.write(c);
   }
 }
@@ -39,9 +39,9 @@ console.log(factorialN(2, 6));
 //
 function numberRevers(num){
   var string = String(num);
-  var reverseResult  = string.split("").reverse().join("");
+  var reverseResult  = string.split("").reverse().join(""); // разве изучали методы строк и массивов?
   var reverseNumber = Number(reverseResult);
-  document.write(reverseNumber);
+  document.write(reverseNumber); // нет рекурсии
 }
 
 numberRevers(456123);
@@ -62,7 +62,7 @@ console.log(reverseNumber(345));
 // Примечание 2. Для получения квадратного корня используйте стандартную функцию JS: Math.sqrt().
 //
 function square(a, b, c) {
-  var discriminant = b * b - 4 * a * c;
+  var discriminant = b * b - 4 * a * c; // b**2
   if (discriminant < 0) {
     document.write("Корней нет")
   }
