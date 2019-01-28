@@ -109,3 +109,7 @@ https://krukovich.github.io/shield_theme/public/contact.html
 # Операторы. Циклы.
 
 https://github.com/AdukarIT/KrukovichAV/tree/master/cycles
+
+# Функции 
+
+https://github.com/AdukarIT/KrukovichAV/blob/master/functions_js/js/script.js
