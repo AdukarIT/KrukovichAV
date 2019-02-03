@@ -113,3 +113,7 @@ https://github.com/AdukarIT/KrukovichAV/tree/master/cycles
 # Функции 
 
 https://github.com/AdukarIT/KrukovichAV/blob/master/functions_js/js/script.js
+
+# Поиск ошибок и отладка кода. Практика
+
+https://github.com/AdukarIT/KrukovichAV/blob/master/home_task/js/script.js
