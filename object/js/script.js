@@ -11,9 +11,9 @@ var human = {
 
 function searchStringinObject(obj, str){
   if (str in obj) {
-    return document.write("Такое свойство есть! " + obj[str]);
+    return console.log("Такое свойство есть! " + obj[str]);
   } else {
-    return document.write("Такого свойства нет!");
+    return console.log("Такого свойства нет!");
   }
 }
 searchStringinObject(human, "secondName")
@@ -46,10 +46,10 @@ var recipe = {
 function getRecipeCount(recipe, portionCount) {
   var portionCount = prompt("Введите количество порций");
   if (portionCount >= recipe.portion) {
-    document.write("Вам понадобиться на " + portionCount + " " + recipe.name + "<br>");
-    document.write(recipe.meal.name + " " + recipe.meal.count * portionCount + " " + recipe.meal.container + "<br>");
-    document.write(recipe.milk.name + " " + recipe.milk.count * portionCount + " " + recipe.milk.container + "<br>");
-    document.write(recipe.yeast.name + " " + recipe.yeast.count * portionCount + " " + recipe.yeast.container + "<br>");
+    console.log("Вам понадобиться на " + portionCount + " " + recipe.name);
+    console.log(recipe.meal.name + " " + recipe.meal.count * portionCount + " " + recipe.meal.container);
+    console.log(recipe.milk.name + " " + recipe.milk.count * portionCount + " " + recipe.milk.container);
+    console.log(recipe.yeast.name + " " + recipe.yeast.count * portionCount + " " + recipe.yeast.container);
   }
 }
 getRecipeCount(recipe, 2);
@@ -63,7 +63,7 @@ var cylinder = {
     return 3.14 * (this.radius**2) * this.height;
   }
 };
-document.write("Объём цилиндра с радиусом " + cylinder.radius + " и высотой " + cylinder.height + " равен " + cylinder.volumeCylinder());
+console.log("Объём цилиндра с радиусом " + cylinder.radius + " и высотой " + cylinder.height + " равен " + cylinder.volumeCylinder());
 
 // Задание 4.
 
@@ -73,13 +73,13 @@ var penguin = {
   notes: "One of the passengers on board of Boner's ark",
   canFly: true,
   sayHello: function() {
-    return document.write(" Приветствую тебя, я пингвин по имени " + penguin.name);
+    return console.log(" Приветствую тебя, я пингвин по имени " + penguin.name);
   },
   fly: function() {
     if (!penguin.canFly) {
-      return document.write(" Я не могу летать!!!");
+      return console.log(" Я не могу летать!!!");
     } else {
-      return document.write(" Я могу летать!!!");
+      return console.log(" Я могу летать!!!");
     }
   }
 };

@@ -23,13 +23,13 @@ function middleNumber() {
   for (var i = 0; i < mass.length; i++) {
     sumNumberMass += mass[i];
   }
-  document.write("Полученный случайный массив из " + mass.length + " равен " + mass + "<br>");
+  console.log("Полученный случайный массив из " + mass.length + " равен " + mass + "<br>");
   middleNumberMass = sumNumberMass / mass.length;
-  document.write("Среднее значание элементов массива " + middleNumberMass + "<br>");
-  document.write("Элементы массива которые больше среднего значения ");
+  console.log("Среднее значание элементов массива " + middleNumberMass + "<br>");
+  console.log("Элементы массива которые больше среднего значения ");
   for (var i = 0; i < mass.length; i++){
     if (mass[i] > middleNumberMass){
-      document.writeln(mass[i]);
+      console.log(mass[i]);
     }
   }
 }
@@ -41,11 +41,11 @@ function getTwoLowItemArray(){
 	var mass = getRandomArray(10);
 	var tempMass = [];
 	var tempMassFirstTwoNumber = [];
-	document.write("random array " + mass + "<br>");
+	console.log("random array " + mass + "<br>");
 	tempMass = mass.sort(sortArray);
-	document.writeln("get sort mass " + mass + "<br>");
+	console.log("get sort mass " + mass + "<br>");
 	tempMassFirstTwoNumber = mass.slice(0,2);
-	document.writeln("two low item in mass " + tempMassFirstTwoNumber);
+	console.log("two low item in mass " + tempMassFirstTwoNumber);
 	}
 getTwoLowItemArray();
 
@@ -61,7 +61,7 @@ function removeItemArray() {
       mass.push(0);
     }
   }
-  document.write(mass);
+  console.log(mass);
 }
 removeItemArray();
 
@@ -72,10 +72,12 @@ function sumTwoRandomArray() {
   var firstMass = getRandomArray(5);
   var secondMass = getRandomArray(5);
   var resultMass = [];
+  console.log(firstMass);
+  console.log(secondMass);
   for (var i = 0; i < firstMass.length; i++){
       resultMass.push(firstMass[i] + secondMass[length - (i + 1)]);
     }
-    document.write(resultMass);
+    console.log(resultMass);
   }
 sumTwoRandomArray();
 
@@ -84,7 +86,7 @@ sumTwoRandomArray();
 function sortArray() {
   var mass = getRandomArray(5);
   var temp = 0;
-  document.write("случайный массив " + mass + "<br>");
+  console.log("случайный массив " + mass);
   for (var i = mass.length - 1; i > 0; i--) {
     for (var j = 0; j < i; j++) {
       if (mass[j] > mass[j + 1]) {
@@ -94,7 +96,7 @@ function sortArray() {
       }
     }
   }
-  document.write("Отсортированный массив " + mass);
+  console.log("Отсортированный массив " + mass);
 }
 sortArray();
 
@@ -104,11 +106,11 @@ sortArray();
 
 function sumTwoItem() {
   var mass = getRandomArray(5);
-  document.write(mass + " случайный массив <br>");
+  console.log(mass + " случайный массив");
   for (var i = 0; i < mass.length; i++) {
     for (var j = 0; j < mass.length; j++) {
       if (mass[i] + mass[j] == 9 || mass[i] + mass[j] == 11) {
-        return document.write(mass[i] + "," + mass[j]);
+        return console.log(mass[i] + "," + mass[j]);
       }
     }
   }
@@ -122,7 +124,7 @@ function replaceHigthNumber() {
   var mass = getRandomArray(4),
     number = 1,
     count = 0;
-  document.write(mass + "<br>");
+  console.log(mass);
   while (count < mass.length) {
     var tempIndex = 0;
     for (var i = 0; i < mass.length; i++) {
@@ -134,7 +136,7 @@ function replaceHigthNumber() {
     number += 1;
     count++;
   }
-  document.write(mass);
+  console.log(mass);
 }
 replaceHigthNumber();
 
@@ -144,15 +146,15 @@ replaceHigthNumber();
 function moveArrayRight(arrayLength, arrayMoveNumber) {
   var mass = getRandomArray(arrayLength);
   if (arrayMoveNumber > arrayLength) {
-    document.write("ERROR");
+    console.log("ERROR");
   }
-  document.write("Случайный массив <br>");
-  document.write(mass + "<br>");
+  console.log("Случайный массив");
+  console.log(mass + "<br>");
   for (var i = 0; i < arrayMoveNumber; i++) {
     mass.unshift(mass[mass.length - 1]);
     mass.pop();
   }
-  document.write("Сдвинутый массив на " + arrayMoveNumber + "<br>");
-  document.write(mass);
+  console.log("Сдвинутый массив на " + arrayMoveNumber + "<br>");
+  console.log(mass);
 }
 moveArrayRight(6, 3);
