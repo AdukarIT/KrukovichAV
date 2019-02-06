@@ -90,7 +90,7 @@ function sortArray() {
   for (var i = mass.length - 1; i > 0; i--) {
     for (var j = 0; j < i; j++) {
       if (mass[j] > mass[j + 1]) {
-        temp = mass[j];``
+        temp = mass[j];
         mass[j] = mass[j + 1];
         mass[j + 1] = temp;
       }
@@ -120,15 +120,19 @@ sumTwoItem();
 // Задание 8. Создайте массив той же длины, что исходный.
 // На месте самого большого числа исходного массива в новом вставьте число 1, на месте второго по величине – 2 и так далее.
 
+
 function replaceHigthNumber() {
   var mass = getRandomArray(4),
-    number = 1,
-    count = 0;
+      number = 1,
+      count = 0,
+      tempNumber;
   console.log(mass);
   while (count < mass.length) {
     var tempIndex = 0;
+        tempNumber = 1;
     for (var i = 0; i < mass.length; i++) {
-      if (mass[i] > mass[0]) {
+      if (mass[i] > tempNumber) {
+        tempNumber = mass[i];
         tempIndex = i;
       }
     }
