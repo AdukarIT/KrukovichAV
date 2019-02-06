@@ -117,3 +117,11 @@ https://github.com/AdukarIT/KrukovichAV/blob/master/functions_js/js/script.js
 # Поиск ошибок и отладка кода. Практика
 
 https://github.com/AdukarIT/KrukovichAV/blob/master/home_task/js/script.js
+
+# Массивы
+
+https://github.com/AdukarIT/KrukovichAV/blob/master/massive/js/script.js
+
+# Объекты
+
+https://github.com/AdukarIT/KrukovichAV/tree/master/object/js
