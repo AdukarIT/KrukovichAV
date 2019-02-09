@@ -11,8 +11,8 @@ var human = {
 
 function searchStringinObject(obj, str){
   if (str in obj) {
-    return console.log("Такое свойство есть! " + obj[str]);
-  } else {
+    return console.log("Такое свойство есть! " + obj[str]); // разве в условии был консоль лог?
+  } else {                                                  // если не было, то этот код нужно оптимизировать
     return console.log("Такого свойства нет!");
   }
 }
@@ -25,7 +25,7 @@ searchStringinObject(human, "secondName")
 
 var recipe = {
   name: "pies",
-  portion: 1,
+  portion: 1, // 1 не больше одного
   meal: {
     name: "meal",
     count: 2,
@@ -59,7 +59,7 @@ getRecipeCount(recipe, 2);
 var cylinder = {
   radius: 30,
   height: 200,
-  volumeCylinder: function(){
+  volumeCylinder: function(){ // вы создали объект с методом, а не добавили метод
     return 3.14 * (this.radius**2) * this.height;
   }
 };
@@ -72,10 +72,10 @@ var penguin = {
   author: "Mort Walker",
   notes: "One of the passengers on board of Boner's ark",
   canFly: true,
-  sayHello: function() {
+  sayHello: function() { // тут вроде тоже методы нужно было добавить
     return console.log(" Приветствую тебя, я пингвин по имени " + penguin.name);
   },
-  fly: function() {
+  fly: function() { 
     if (!penguin.canFly) {
       return console.log(" Я не могу летать!!!");
     } else {
