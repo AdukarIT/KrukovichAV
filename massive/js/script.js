@@ -16,8 +16,8 @@ function sortArray(a, b) { // функция для сортировки мас�
 
 // Задача 2. Выведите в консоль элементы массива, которые больше среднего арифметического всех элементов.
 
-function middleNumber() { // пожалуйста, избавьтесь от document.write() это затрудняет проверку ваших решений
-  let mass = getRandomArray(10);
+function middleNumber() { // название не соответствует сути функции
+  let mass = getRandomArray(10); // такие вещи лучше делать снаружи и передавать массив как аргумент
   let sumNumberMass = 0;
   let middleNumberMass = 0;
   for (var i = 0; i < mass.length; i++) {
@@ -37,12 +37,13 @@ middleNumber();
 
 //Задача 3. Найдите два наименьших элемента массива.
 
-function getTwoLowItemArray(){
-	var mass = getRandomArray(10);
+// решение не работает
+function getTwoLowItemArray(){ // в случае с генерацией массива внутри, название сново не соответствует происходящему
+	var mass = getRandomArray(10); // аналогично 2 задаче
 	var tempMass = [];
 	var tempMassFirstTwoNumber = [];
 	console.log("random array " + mass + "<br>");
-	tempMass = mass.sort(sortArray);
+	tempMass = mass.sort(sortArray); // почитайте об аргументе метода sort
 	console.log("get sort mass " + mass + "<br>");
 	tempMassFirstTwoNumber = mass.slice(0,2);
 	console.log("two low item in mass " + tempMassFirstTwoNumber);
@@ -109,7 +110,7 @@ function sumTwoItem() {
   console.log(mass + " случайный массив");
   for (var i = 0; i < mass.length; i++) {
     for (var j = 0; j < mass.length; j++) {
-      if (mass[i] + mass[j] == 9 || mass[i] + mass[j] == 11) {
+      if (mass[i] + mass[j] == 9 || mass[i] + mass[j] == 11) { // не соответствует условию
         return console.log(mass[i] + "," + mass[j]);
       }
     }
@@ -128,7 +129,7 @@ function replaceHigthNumber() {
       tempNumber;
   console.log(mass);
   while (count < mass.length) {
-    var tempIndex = 0;
+    var tempIndex = 0; // почему всё не объявить в одном месте?
         tempNumber = 1;
     for (var i = 0; i < mass.length; i++) {
       if (mass[i] > tempNumber) {
@@ -137,8 +138,8 @@ function replaceHigthNumber() {
       }
     }
     mass.splice(tempIndex, 1, number);
-    number += 1;
-    count++;
+    number += 1; // эта переменная излишня
+    count++; // или эта
   }
   console.log(mass);
 }
@@ -155,8 +156,8 @@ function moveArrayRight(arrayLength, arrayMoveNumber) {
   console.log("Случайный массив");
   console.log(mass + "<br>");
   for (var i = 0; i < arrayMoveNumber; i++) {
-    mass.unshift(mass[mass.length - 1]);
-    mass.pop();
+    mass.unshift(mass[mass.length - 1]); // эти два действия
+    mass.pop(); 			// можно было объединить
   }
   console.log("Сдвинутый массив на " + arrayMoveNumber + "<br>");
   console.log(mass);
