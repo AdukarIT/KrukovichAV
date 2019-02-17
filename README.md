@@ -125,3 +125,7 @@ https://github.com/AdukarIT/KrukovichAV/blob/master/massive/js/script.js
 # Объекты
 
 https://github.com/AdukarIT/KrukovichAV/tree/master/object/js
+
+# Встроенные возможности JavaScript
+
+https://github.com/AdukarIT/KrukovichAV/tree/master/js_hw_6
