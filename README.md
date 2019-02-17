@@ -129,3 +129,12 @@ https://github.com/AdukarIT/KrukovichAV/tree/master/object/js
 # Встроенные возможности JavaScript
 
 https://github.com/AdukarIT/KrukovichAV/tree/master/js_hw_6
+
+# Продвинутый JavaScript
+
+https://github.com/AdukarIT/KrukovichAV/tree/master/js_hw_7
+
+# DOM. Работа со страницей
+
+https://github.com/AdukarIT/KrukovichAV/tree/master/js_hw_8
+
