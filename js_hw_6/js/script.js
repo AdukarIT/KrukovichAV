@@ -64,7 +64,7 @@ function getMoreCharInString(str) {
       tempStr,
       firstEquael = 1;
   for (var i = 0; i < str.length; i++) {
-    for (var j = 1; j < str.length; j++) {
+    for (var j = 1; j < str.length; j++) { // разве мы не можем из i получить i+1?
       if (strArray[i] == strArray[j]) {
         count++
         if (count > firstEquael) {
@@ -90,7 +90,8 @@ function replaseStr(str, search, replace) {
   str = arrayStr.join("");
   return str;
 }
-replaseStr("привет как у тебя дела", "тебя", "меня");
+replaseStr("привет как у тебя дела", "тебя", "меня"); // мне нравиться как вы решаете задачи со строками! очень лаконично. только вы немного недовыполнили задание, нужно было все вхождения найти
+// в программировании очень важна внимательность и концентрация
 
 // Задача 6. Напишите функцию, которая замяняет первую букву каждого слова в строке на такую же большую.
 
@@ -99,12 +100,12 @@ function firstCharUppercase(str) {
       tempStr,
       tempUpper;
   tempStr = arrayStr[0];
-  tempUpper = String(tempStr.toUpperCase());
+  tempUpper = String(tempStr.toUpperCase()); // зачем тут эта обертка?
   arrayStr[0] = tempUpper;
   for (var i = 0; i < str.length; i++) {
     if (arrayStr[i] == " ") {
       tempStr = arrayStr[i + 1];
-      tempUpper = String(tempStr.toUpperCase());
+      tempUpper = String(tempStr.toUpperCase()); // зачем тут эта обертка?
       arrayStr[i + 1] = tempUpper;
     }
   }
@@ -137,12 +138,13 @@ function getDay() {
   let now = new Date();
   return ("Сегодня " + arrayDay[now.getDay() - 1]);
 }
-getDay();
+getDay(); // если все эти решения вы написали сами, то вы большой молодец!
+// никто так мастерски не работает со строками и представить дни недели массивом тоже никто не придумал. вы хорошо усвоили материал
 
 // Задание 9. Напишите функцию, которая принимает у пользователя дату в формате "ДД-ММ-ГГГГ" и,
 // используя функцию из задачи 8, выдаёт в консоль день недели для этой даты.
 
-function getNowDate(day, month, year) {
+function getNowDate(day, month, year) { // нужно было получать у пользователя, те через промпт
   let arrayDay = ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресение"],
       now = new Date();
   now.setDate(day);
@@ -187,7 +189,7 @@ function getBirthdayUserInSearchDay(day, month, searchDay) {
   userDate.setDate(day);
   userDate.setMonth(month - 1);
   userDateMilliSecond = userDate.getTime();
-  resultDateMilliSecond = userDateMilliSecond + searchDay * 24 * 60 * 60 * 1000;
+  resultDateMilliSecond = userDateMilliSecond + searchDay * 24 * 60 * 60 * 1000; // такое лучше разбивать
   resultDate = new Date(resultDateMilliSecond);
   console.log(resultDate);
 }
@@ -196,7 +198,7 @@ getBirthdayUserInSearchDay(11,03,1000);
 // Задача 11. Напишите функцию, которая принимает число, проверяет, является ли оно квадратом целого числа.
 // Если это так, функция возвращает квадратный корень исходного числа; в ином случае генерирует ошибку.
 
-function checkNumber(number) {
+function checkNumber(number) { // тут тоже лучше было разбить на вспомогательные функции
   let resultNumber,
       roundNumber;
   try {
