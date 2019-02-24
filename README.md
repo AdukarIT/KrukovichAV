@@ -138,3 +138,6 @@ https://github.com/AdukarIT/KrukovichAV/tree/master/js_hw_7
 
 https://github.com/AdukarIT/KrukovichAV/tree/master/js_hw_8
 
+# События. Координаты на странице
+
+https://github.com/AdukarIT/KrukovichAV/tree/master/js_hw_9
