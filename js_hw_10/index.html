@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!-- Задача 1 -->
+  <h3>Task 1</h3>
+  <form name="userForm">
+    Имя:
+    <input type="text" id="name"><br>
+    Кол-во пончиков:
+    <input type="text" id="donuts"><br>
+    Минут:
+    <input type="text" id="minutes"><br>
+    Подитог:
+    <input type="text" id="poditog"><br>
+    Налог:
+    <input type="text" id="tax"><br>
+    Итог:
+    <input type="text" id="itog"><br>
+    <input type="submit" value="заказать" onclick="validateForm()">
+  </form>
+
+  <!-- Задача 2 -->
+  <h3>Task 2</h3>
+  <form class="task2" action="mailto:Shaht3r@mail.ru" method="post">
+    <input type="text">
+    <input type="submit" name="" value="Отправка" onclick="validText()">
+    <input type="button" name="" value="Отмена" onclick="clearInputText()">
+  </form>
+
+  <!-- Задача 3 -->
+  <h3>Task 3</h3>
+  <form class="task3" action="index.html" method="post">
+    <input type="text" placeholder="text"><br>
+    <input type="email" placeholder="email"><br>
+    <input type="password" placeholder="password"><br>
+    <input type="tel" placeholder="phone"><br>
+    <input type="button" name="" value="Проверка полей" onclick="checkInputInForm()">
+  </form>
+
+  <!-- Задача 4 -->
+  <h3>Task 4</h3>
+  <form class="task4" action="index.html" method="post">
+    <input type="text" placeholder="text"><br>
+    <input type="email" placeholder="email"><br>
+    <input type="password" placeholder="password"><br>
+    <input type="tel" placeholder="phone"><br>
+    <input type="button" name="" value="Проверка полей" onclick="checkInputInFormTwo()">
+  </form>
+
+  <script src="js/script.js" charset="utf-8"></script>
+</body>
+
+</html>
