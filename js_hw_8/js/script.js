@@ -12,7 +12,7 @@ function removeClassName(doc, tag) {
   let foundTags = doc.getElementsByTagName(tag);
   for (var i = 0; i < foundTags.length; i++) {
     if (foundTags[i].className == "www") {
-      foundTags[i].className = "";
+      foundTags[i].className = ""; // вы удалили все классы а не www
     }
   }
 }
@@ -23,7 +23,7 @@ removeClassName(document.body, "div")
 
 function recursiveSearchTags(doc, tag) {
   let result = doc.getElementsByTagName(tag);
-  result = [].slice.call(result);
+  result = [].slice.call(result); // можно сразу возвращать результат
   return result
 };
 recursiveSearchTags(document.body, 'section');
@@ -60,7 +60,7 @@ document.body.insertBefore(nextDivUp, searchDiv);
 
 // Задача 6. Реализуйте функцию wrapInParagraph, которая находит текст (дочерние текстовые ноды) внутри элемента div и оборачивает текст в параграф
 
-function wrapInParagraph(doc, tegClass) {
+function wrapInParagraph(doc, tegClass) { // tag
   let p = document.createElement("p");
   let searchClass = document.querySelector(tegClass);
   let nextTeg = searchClass.lastElementChild;
