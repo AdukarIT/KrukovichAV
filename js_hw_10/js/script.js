@@ -23,7 +23,7 @@ function validateForm() {
       }
     }
   });
-}
+} // это всё нужно было повесить на обработчик, конечно
 
 // Задача 2. Создать страницу с текстовым полем и двумя кнопками. При нажатии одной из них происходит передача данных содержимого текстового поля
 // по электронной почте (action="mailto:address@domen.domen"), при нажатии другой – происходит очистка текстового поля.
@@ -51,7 +51,7 @@ function clearInputText() {
     }
   });
 }
-clearInputText();
+clearInputText(); // где тут отправка-то?
 
 // Задача 3. Напишите универсальную функцию для прохождения по полям формы с возможностью проверки введенных данных,
 // для тектовых полей - на текст, для имейла - на имейл и тд.
@@ -78,7 +78,7 @@ function checkInputInForm() {
       }
     }
   }
-}
+} // проверочные регулярки слабоваты
 
 // Задача 4. Поверьте написанную ранее функция на обработку форы регистрации, если поле не проходит валидацию - подсветите его,
 // если все поля валидные - выведите приветственное сообщение.
@@ -123,14 +123,15 @@ function checkInputInFormTwo() {
       alert("УРА!!!");
     }
   }
-}
+} // много дублирований. код плохо оформлен, трудно читать. 
+// подумайте над оптимизацией
 
 // Задача 6. С помощью test определите, что переданная строка является корректным временем вида '9.59 am', '12.30 pm'.
 
 let string = "10.44 am";
 
 function checkStringOnTime() {
-  let regexp = new RegExp(/^[0-9]|1[0-2]\.[0-5][0-9]\s[ap]\m/g);
+  let regexp = new RegExp(/^[0-9]|1[0-2]\.[0-5][0-9]\s[ap]\m/g); // 0.60 zz
   return regexp.test(string);
 }
 checkStringOnTime(string);
@@ -139,9 +140,9 @@ checkStringOnTime(string);
 
 let str = "dsf xxx xxx xxx sd";
 
-function deleteSearchStr() {
+function deleteSearchStr() { // нужно передать аргумент
   let regexp = new RegExp(/\x{3}/);
-  let result = str.replace(regexp, "").replace(regexp, " ");
+  let result = str.replace(regexp, "").replace(regexp, " "); // а если будет "dsf xxx xxx xxx xxx sd"?
   console.log(result);
 }
-deleteSearchStr(str);
+deleteSearchStr(str); // "dsf    xxx sd"
