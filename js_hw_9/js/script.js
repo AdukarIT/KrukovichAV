@@ -31,7 +31,7 @@ let borderedClassTable = document.getElementById("table_bordered");
 let stripedClassTable = document.getElementById("table_striped");
 let higlightClassTable = document.getElementById("table_highlight");
 
-borderedClassTable.addEventListener("click", function() {
+borderedClassTable.addEventListener("click", function() { // можно было повесить один обработчик на родительский элемент, помните об этом
   table.className = "bordered";
 });
 stripedClassTable.addEventListener("click", function() {
@@ -50,13 +50,13 @@ buttonShowValue.addEventListener("click", function() {
 });
 let disableButton = document.getElementById("disableFirstButton");
   disableButton.addEventListener("click", function() {
-    buttonShowValue.disable = "true";
+    buttonShowValue.disable = "true"; // нужно было отключить событие, а не выключить кнопку
   });
 
 // Задача 5. Создайте элементы div, p, button, a. Используя target по клику выводите информацию о типе элемента по которому произошел клик.
 
 let parentDiv = document.getElementsByClassName("container");
- let className = [].slice.call(parentDiv);
+ let className = [].slice.call(parentDiv); // а зачем тут это? вы же из псевдомассива и так можете получить [0]
   className[0].addEventListener("click", function(event) {
     alert(event.target);
   });
@@ -67,7 +67,7 @@ let parentDiv = document.getElementsByClassName("container");
 
 let galleryImgHidden = document.getElementById("imgHidden");
   galleryImgHidden.addEventListener("mouseover", function() {
-    galleryImgHidden.className = "gallery__second-img_hidden";
+    galleryImgHidden.className = "gallery__second-img_hidden"; // красота!
   });
   galleryImgHidden.addEventListener("mouseout", function() {
     galleryImgHidden.className = "gallery__second-img";
