@@ -1,0 +1,26 @@
+body {
+  margin: 20px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+textarea {
+  display: flex;
+  flex-direction: column;
+  resize: none;
+  margin-top: 20px;
+}
+
+.task3{
+  margin: 20px;
+}
+
+.user-form__block {
+  display: flex;
+  flex-direction: column;
+  width: 580px;
+  height: 300px;
+  border: 1px solid;
+  margin-top: 20px;
+}
+
