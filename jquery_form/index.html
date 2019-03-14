@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery form</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+</head>
+
+<!-- Форма обратной связи содержит поля: имя, емейл, телефон, сообщение. 
+Все поля обязательны для заполнения. Сообщение должно быть от 10 до 1000 знаков. 
+После заполнения каждого из полей рядом с ним должна загораться галочка. 
+При отправке формы выведите сообщение, если какие-то поля не заполнены, а также отмените отправку. -->
+
+<body>
+    <form class="user-form">
+        <div class="user-form__item">
+            <label for="name">Name</label>
+            <input type="text" id="name" required autocomplete="off">
+            <img src="img/i.png" id="name__img">     
+        </div>
+        <div class="user-form__item">
+            <label for="email">Email</label>
+            <input type="email" id="email" required>               
+            <img src="img/i.png" id="email__img">    
+        </div>
+        <div class="user-form__item">
+            <label for="tel">Phone</label>
+            <input type="tel" id="tel" required>
+            <img src="img/i.png" id="phone__img">
+        </div>
+        <label for="message">Message</label>
+        <input type="text" id="message">
+        <input type="button" value="Enter" id="btn__user-form_enter">
+        <input type="button" value="Cansel" id="btn__user-form_cansel">
+    </form>
+</body>
+</html>

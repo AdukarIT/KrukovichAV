@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+}
+
+.user-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+.user-form input {
+    outline: none;
+    height: 30px;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: transparent;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.user-form__item {
+    padding-top: 30px;
+    display: flex;
+    margin-left: 30px;
+}
+
+.user-form__item img {
+    position: absolute;
+    right: 0;
+}
+
+.user-form input:focus {
+    border-color: #fff;
+}
+
+.user-form label {
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+    color: #fff;
+}
+
+#btn__user-form_enter {
+    margin-top: 50px;
+    width: 100px;
+    border-radius: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#btn__user-form_enter:hover {
+    cursor: pointer;
+    border-color: #fff;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+
+#btn__user-form_cansel {
+    margin-left: 60px;
+    width: 100px;
+    border-radius: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#btn__user-form_cansel:hover {
+    cursor: pointer;
+    border-color: #fff;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
