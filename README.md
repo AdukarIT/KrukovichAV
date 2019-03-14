@@ -149,3 +149,7 @@ https://github.com/AdukarIT/KrukovichAV/tree/master/js_hw_10
 # ООП в Javascript
 
 https://github.com/AdukarIT/KrukovichAV/tree/master/js_hw_11
+
+# Jquery form 
+
+https://github.com/AdukarIT/KrukovichAV/tree/master/jquery_form
