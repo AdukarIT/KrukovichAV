@@ -30,7 +30,7 @@ console.log("Студент " + studentOne.getFullName.call(user) + " он ст�
 
 
 // Задача 2. Напишите программу, расчиытвающую стоимость и калорийность гамбургеров (чисбургер, бигмак и тд), используя ООП подход.
-
+// тут нужно было создать родительский класс и отнаследоваться в разные типы бургеров
 function CaloricAndPrice() {
   this.caloric = {
     bread: 50,
@@ -76,7 +76,7 @@ function Task(hours, minutes) {
   this.minutes = minutes;
   
     this.writeTaskInDiv = function() {
-      Task.call(this);
+      Task.call(this); // интересно, и зачем это?
       let inputUserTask = document.getElementById("userTask"),
           userTask = inputUserTask.value,
           taskText = document.createTextNode(userTask);
@@ -89,7 +89,7 @@ function Task(hours, minutes) {
     }   
     
   this.setParamsAndPlaySound = function() {
-    Task.call(this);
+    Task.call(this); // интересно, и зачем это?
       let userHours = hours.value;
       let userMinutes = minutes.value;
       let timer = setInterval(function() {
@@ -115,7 +115,7 @@ startAps.addEventListener("click", function() {
       audio.autoplay = true;
 
   let start = new Task(hours, minutes);
-      start.setParamsAndPlaySound();
+      start.setParamsAndPlaySound(); // не понятно, зачем эти методы, если они нужны сразу же, на создании
       start.writeTaskInDiv();
 });
 
