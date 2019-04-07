@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Jquery validdator form</title>
+</head>
+<body>
+        <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">имя клиента</th>
+                    <th scope="col">телефон</th>
+                    <th scope="col">дата обращения</th>
+                    <th scope="col">тип обращения</th>
+                  </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+              </table>
+              <input type="button" value="Удалить" id="del">
+              <div class="container">
+                <div class="container-form_hiden">
+                    <form id="userForm">
+                        <label for="name">Введите свое имя</label>
+                        <input type="text" name="userName" id="name" required>
+                        <label for="phone">Введите свой телефон</label>
+                        <input type="tel" name="userPhone" id="phone" required>
+                        <label for="text">Текст обращение</label>
+                        <textarea name="userText" id="text" cols="30" rows="5"></textarea>
+                        <input type="submit" value="Добавить" id="writeMessage">
+                        <input type="button" value="Отмена" id="cancel">
+                    </form>
+                </div>
+            </div>
+            <input type="button" value="Новое обращение" id="btnStart">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/scrpt.js"></script>
+</body>
+</html>
+
