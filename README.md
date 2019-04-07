@@ -153,3 +153,7 @@ https://github.com/AdukarIT/KrukovichAV/tree/master/js_hw_11
 # Jquery form 
 
 https://github.com/AdukarIT/KrukovichAV/tree/master/jquery_form
+
+# Библиотека jQuery. Плагины
+
+https://github.com/AdukarIT/KrukovichAV/tree/master/js_hw_12
