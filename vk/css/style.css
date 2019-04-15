@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/lines.png");
+}
+
+/*
+.dws_choice {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}*/
+
+.choice__checkbox[type="checkbox"] {
+  display: none;
+}
+
+.choice {
+  position: relative;
+}
+
+.choice__label {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.choice__label:hover {
+  cursor: pointer;
+}
+
+.choice__label::before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 10px;
+  border: 1px solid;
+  border-radius: 50px;
+  background-color: #4a4a4a;
+  box-shadow: 1px 1px 1px 1px;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
+.choice__label::after {
+  position: absolute;
+  left: 5px;
+  top: 3px;
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 15px;
+  border: 1px solid #4a4a4a;
+  border-radius: 50%;
+  background-color: #aaa;
+  box-shadow: 1px 1px 1px 1px;
+  transition: 0.3s;
+}
+
+.choice__checkbox:checked+.choice__label::before {
+  background-color: blue;
+  transition: 1s;
+  box-shadow: 1px 1px 1px 1px;
+}
+
+.choice__checkbox:checked+.choice__label::after {
+  left: 15px;
+  background-color: #fff;
+  transition: 0.3s;
+  box-shadow: 1px 1px 1px 1px;
+}
