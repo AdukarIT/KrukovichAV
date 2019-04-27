@@ -163,3 +163,5 @@ https://github.com/AdukarIT/KrukovichAV/tree/master/js_hw_12
 # Итоговая работа по JS 
 
 https://github.com/Krukovich/krukovich.github.io/tree/master/vk_js_app
+
+https://krukovich.github.io/vk_js_app/
