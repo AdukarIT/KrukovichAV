@@ -140,6 +140,8 @@ https://github.com/AdukarIT/KrukovichAV/tree/master/js_hw_8
 
 # События. Координаты на странице
 
+# Итоговый 
+
 https://github.com/AdukarIT/KrukovichAV/tree/master/js_hw_9
 
 # Формы
@@ -157,3 +159,7 @@ https://github.com/AdukarIT/KrukovichAV/tree/master/jquery_form
 # Библиотека jQuery. Плагины
 
 https://github.com/AdukarIT/KrukovichAV/tree/master/js_hw_12
+
+# Итоговая работа по JS 
+
+https://github.com/Krukovich/krukovich.github.io/tree/master/vk_js_app
